@@ -12,7 +12,7 @@ des: 'I love writing on daily basis. It helps in maintaining my sanity.',
   {
     icon: dev,
     title:'Development',
-    des: 'I am ver enthusiastic about development. My projects are based on HTML, CSS, JS and React.'
+    des: 'I am very enthusiastic about development. My projects are based on HTML, CSS, JS and React.'
   },
   {
     icon: photo,
@@ -28,10 +28,10 @@ des: 'I love writing on daily basis. It helps in maintaining my sanity.',
           cards.map((item)=>(
             <div className='bg-slate-200 border border-gray-200 py-5'>
           <div className='flex items-center justify-center'>
-          <img src={item.icon} alt='' className=' w-[100px] py-3'/></div>
-            <p className='font-semibold py-2'>{item.title}</p>
+          <img src={item.icon} alt='' className=' w-[100px] py-3 xl:w-[150px]'/></div>
+            <p className='font-semibold py-2 xl:text-lg'>{item.title}</p>
             <div className='flex justify-center items-center'>
-            <p className=' w-3/4'>{item.des}</p></div>
+            <p className=' w-3/4 xl:text-lg'>{item.des}</p></div>
             </div>
              ))}
             

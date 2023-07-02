@@ -19,23 +19,28 @@ message: '',
     };
 
   return (
-    <div className='flex flex-col justify-between items-center py-20 md:flex-row md:px-8'>
+    <div className='flex flex-col justify-between items-center py-16 md:flex-row md:px-8 lg:px-20 xl:px-36'>
       <div className='flex justify-center items-center md:justify-between'>
-<img src={contact} alt='contact' className='w-3/4'/>
+<img src={contact} alt='contact' className='w-[80%] lg:w-full'/>
       </div>
-   <form onSubmit={handleSubmit}>
+   <form onSubmit={handleSubmit} className='bg-slate-200 p-7 rounded-md lg:p-12 '> 
     {/* <label>Name: </label> */}
-    <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required className='border my-2 rounded-md'/>
+    <input type='text' name='name' value={formData.name} onChange={handleChange} placeholder='Name' required className='border my-2 rounded-md border-black px-2 xl:text-xl'/>
     
     <br>
     </br>
+
     {/* <label>Email:  </label> */}
-    <input name='email'  type='email' value={formData.email} onChange={handleChange} placeholder='Email' required className='border my-2 rounded-md'/>
+    <input name='email'  type='email' value={formData.email} onChange={handleChange} placeholder='Email' required className='border my-2 rounded-md border-black px-2 xl:text-xl'/>
+
    <br></br>
+
     {/* <label>Message: </label> */}
-    <textarea name="message"  type="textarea" value={formData.message} onChange={handleChange} placeholder='Message' required className='border my-2 rounded-md w-full'/>
+    <textarea name="message"  type="textarea" value={formData.message} onChange={handleChange} placeholder='Message' required className='border my-2 rounded-md w-full border-black px-2 xl:text-xl'/>
+
    <br></br>
-    <button type='submit'>submit</button>
+
+    <button type='submit' className='bg-slate-600 rounded-md px-2 py-1 text-white xl:text-xl'>Submit</button>
     
    </form>
    </div>
