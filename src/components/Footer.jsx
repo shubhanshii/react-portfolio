@@ -16,7 +16,7 @@ icon:git,
 },
     ]
   return (
-    <div className=' py-16 flex flex-col justify-between items-center px-auto bg-slate-500'>
+    <div className=' py-6 flex flex-col justify-between items-center px-auto bg-slate-500'>
        
     <div className='flex gap-10 justify-center items-center pb-8'>
 {
