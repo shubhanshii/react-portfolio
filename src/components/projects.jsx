@@ -1,92 +1,49 @@
-// import React from 'react'
-// import writing from '../components/assets/creative-writing.png'
-// import dev from '../components/assets/blogger.png'
-// import photo from '../components/assets/photo-camera.png'
 
-// const projects = () => {
-//   const cards = [{
-// icon: writing,
-// title: 'Writing',
-// des: 'I love writing on daily basis. It helps in maintaining my sanity.',
-//   },
-//   {
-//     icon: dev,
-//     title:'Development',
-//     des: 'I am very enthusiastic about development. My projects are based on HTML, CSS, JS and React.'
-//   },
-//   {
-//     icon: photo,
-//     title: 'Photography',
-//     des: 'It is one of my favourite hobby. It finds perfection in surroundings.'
-//   }
-// ]
-//   return (
-//     <div className='text-center px-6 bg-slate-100 flex flex-col items-center gap-10 py-28 lg:flex-row lg:px-44'>
-
-        
-//           {
-//           cards.map((item)=>(
-//             <div className='bg-slate-200 border border-gray-200 py-5 px-10 min-w-[100px] flex flex-col justify-center items-center gap-4'>
-//               <div className='flex items-center justify-center w-full'>
-//           <img src={item.icon} alt='' className='w-1/3'/></div>
-          
-//             <p className='font-semibold py-2 xl:text-lg'>{item.title}</p>
-            
-//             <p className=' xl:text-base'>{item.des}</p></div>
-            
-//              ))}
-            
-            
-           
-//              </div>
-
-// )}
 
 //new code
-// import React from 'react';
-// import writing from '../components/assets/creative-writing.png';
-// import dev from '../components/assets/blogger.png';
-// import photo from '../components/assets/photo-camera.png';
+  // import React from 'react';
+  // import writing from '../components/assets/creative-writing.png';
+  // import dev from '../components/assets/blogger.png';
+  // import photo from '../components/assets/photo-camera.png';
 
-// const Projects = () => {
-//   const cards = [
-//     {
-//       icon: writing,
-//       title: 'Writing',
-//       des: 'I love writing on a daily basis. It helps in maintaining my sanity.',
-//     },
-//     {
-//       icon: dev,
-//       title: 'Development',
-//       des: 'I am very enthusiastic about development. My projects are based on HTML, CSS, JS, and React.',
-//     },
-//     {
-//       icon: photo,
-//       title: 'Photography',
-//       des: 'It is one of my favorite hobbies. It finds perfection in surroundings.',
-//     },
-//   ];
+  // const Projects = () => {
+  //   const cards = [
+  //     {
+  //       icon: writing,
+  //       title: 'Writing',
+  //       des: 'I love writing on a daily basis. It helps in maintaining my sanity.',
+  //     },
+  //     {
+  //       icon: dev,
+  //       title: 'Development',
+  //       des: 'I am very enthusiastic about development. My projects are based on HTML, CSS, JS, and React.',
+  //    },
+  //    {
+  //       icon: photo,
+  //      title: 'Photography',
+  //       des: 'It is one of my favorite hobbies. It finds perfection in surroundings.',
+  //     },
+  //   ];
 
-//   return (
-//     <div className='text-center px-6 bg-slate-100 flex flex-col justify-center items-center gap-10 py-28 lg:flex-row lg:px-44' style={{height: '550px' }}>
-//       {cards.map((item) => (
-//         <div
-//           key={item.title}
-//           className='bg-slate-200 border border-gray-200 flex flex-col justify-center items-center gap-4 py-3'
-//           style={{ flex: '1', height: '100%', width: '100%', maxWidth: '800px' }}
-//         >
-//           <div className='flex items-center justify-center w-full'>
-//             <img src={item.icon} alt='' className='w-1/3' />
-//           </div>
-//           <p className='font-semibold py-2 xl:text-lg'>{item.title}</p>
-//           <p className='xl:text-base px-5'>{item.des}</p>
-//         </div>
-//       ))}
-//     </div>
-//   );
-// };
+  //   return (
+  //    <div className=''>
+  //       {cards.map((item) => (
+  //       <div
+           
+  //           className='bg-gray-100 gap-10 py-5'
+  //         >
+  //           <div className='flex justify-center items-center'>
+  //             <img src={item.icon} alt='' className='w-1/3' />
+  //           </div>
+  //           <p className='text-center text-lg font-semibold'>{item.title}</p>
+  //           <p className='xl:text-base px-5 text-center'>{item.des}</p>
+  //         </div>
+  //      ))}
+  //    </div>
+  //  );
+  // };
 
-// export default Projects;
+  // export default Projects;
 
 //new code finished
 
@@ -115,25 +72,29 @@ const Projects = () => {
   ];
 
   return (
-    <div className='text-center px-6 bg-slate-100 flex flex-col items-center gap-10 py-10 lg:flex-row lg:px-44'>
-      {cards.map((item) => (
-        <div
-          key={item.title}
-          className='bg-slate-200 border border-gray-200 flex flex-col justify-center items-center gap-4 py-3'
-          style={{ width: '100%', maxWidth: '800px' }}
-        >
-          <div className='flex items-center justify-center w-full'>
-            <img src={item.icon} alt='' className='w-1/3' />
+    <div className=' text-center bg-slate-100 flex flex-col items-center py-10'>
+      <div className=' flex flex-col lg:flex-row justify-center gap-10 max-w-5xl px-8 xl:px-1 xl:py-10 md:w-2/3 lg:w-[90%] '>
+        {cards.map((item) => (
+          <div
+            key={item.title}
+            className=' bg-slate-200 border border-gray-200 flex flex-col justify-center items-center gap-4 p-4 '
+            style={{ flex: '1', minWidth: '0', minHeight: '0', maxHeight: '100%' }}
+          >
+            <div className='flex items-center justify-center w-full h-1/2'>
+              <img src={item.icon} alt='' className=' w-1/3 md:w-1/6 lg:w-1/2 xl:w-1/2' />
+            </div>
+            <p className=' font-semibold py-2 text-lg overflow-y-hidden'>{item.title}</p>
+            <p className='text-base px-5 overflow-y-hidden pb-5'>{item.des}</p>
           </div>
-          <p className='font-semibold py-2 xl:text-lg'>{item.title}</p>
-          <p className='xl:text-base px-5'>{item.des}</p>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
 
 export default Projects;
+
+
 
 
 {/* <div className='flex items-center justify-center'>

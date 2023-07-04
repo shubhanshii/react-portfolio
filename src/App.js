@@ -13,10 +13,11 @@ function App() {
 
     <div>
   
-      {/* <div className="bg-[url('components/assets/bg1')] bg-cover bg-no-repeat h-screen w-full"> */}
+     <div className="bg-[url('components/assets/bg3.jpg')] bg-cover bg-no-repeat h-screen w-full  overflow-y-hidden"> 
       
       <Navbar/>
       <Banner/>
+      </div>
     <About/>
     <Services/>
     <Projects/>
