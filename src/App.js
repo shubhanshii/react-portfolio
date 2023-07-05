@@ -7,6 +7,7 @@ import Services from './components/services';
 import Projects from './components/projects';
 import Form from './components/Form';
 import Footer from './components/Footer';
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
     <Projects/>
     <Form/>
     <Footer/>
-
+   
     </div>
     
   );

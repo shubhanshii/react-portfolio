@@ -31,9 +31,9 @@ message: '',
     
 
   return (
-    <div className='flex flex-col justify-between items-center py-14 px-8 md:flex-row md:px-8 lg:px-20 xl:px-36'>
+    <div id='contact' className='flex flex-col justify-between items-center py-14 px-8 md:flex-row md:px-8 lg:px-20 xl:px-36 '>
       <div className='flex justify-center items-center md:justify-between'>
-<img src={contact} alt='contact' className='w-[80%]'/>
+<img src={contact} alt='contact' className='w-[80%] xl:w-full'/>
       </div>
    <form ref={form} onSubmit={handleSubmit} className='p-7 rounded-md lg:p-12 bg-slate-200'> 
   <label className='text-lg font-semibold'>Name: </label> <br></br>

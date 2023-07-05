@@ -72,7 +72,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className=' text-center bg-slate-100 flex flex-col items-center py-10'>
+    <div id='skills' className=' text-center bg-slate-100 flex flex-col items-center py-10 '>
       <div className=' flex flex-col lg:flex-row justify-center gap-10 max-w-5xl px-8 xl:px-1 xl:py-10 md:w-2/3 lg:w-[90%] '>
         {cards.map((item) => (
           <div

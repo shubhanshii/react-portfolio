@@ -1,7 +1,28 @@
 import React, {useState} from 'react'
 import logo from '../components/assets/images-removebg-preview.png';
 import menu from '../components/assets/menu.png'
-const navItems=['Home', 'About', 'Services', 'skills', 'Contact']
+const navItems=[
+  {
+    title:'Home',
+  id: '#banner'
+}, 
+  {
+    title:'About',
+id:'#about'
+}, 
+{
+  title:'Services',
+id:'#services'
+}, 
+{
+  title:'Skills',
+id:'#skills'
+}, 
+{
+  title:'Contact',
+id:'#contact'
+},
+]
 const Navbar = () => {
    
   
@@ -18,7 +39,9 @@ const Navbar = () => {
             { <ul className='flex cursor-pointer md:gap-10 py-4 max-md:hidden md:visible'> 
             {
               navItems.map((item)=>(
-                <li className=' hover:text-yellow-500 text-black font-semibold '>{item}</li>
+                
+                <a href={item.id} className=' hover:text-yellow-500 text-black font-semibold '>{item.title}</a>
+                
               ))
             }
           
